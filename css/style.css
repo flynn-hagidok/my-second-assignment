@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&display=swap');
 
 .cossette-texte-regular {
@@ -5,6 +6,18 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+/* noto serif */
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 
 .cossette-texte-bold {
   font-family: "Cossette Texte", sans-serif;
@@ -26,11 +39,19 @@
 .color-2{
     color: #8987A1;
 }
+.color-3{
+    color: #E95A08;
+}
+
+
 /* header related style */
 header{
     max-width: 1140px;
     margin: 0px auto;
     /* background-color: green; */
+    /* background-image: url(../images/hero-flower.png);
+    background-repeat: no-repeat;
+    background-position: right bottom; */
 }
 navbar{
     justify-content: space-between;
@@ -47,3 +68,60 @@ navbar{
 #cart{
     margin-right: 6px;
 }
+
+/* navbar responsive */
+@media screen and (max-width: 576px){
+    .home{
+        display: none;
+    }
+    .flex ul{
+        margin-bottom: 0px;
+    }
+    .menubar ul li a{
+        margin-right: 0px;
+    }
+}
+
+
+/* banner related style */
+.banner{
+    /* width: 1140px; */
+    /* height: 460px; */
+    margin-top: 100px;
+    /* background-color: gray; */
+    background-image: url(../images/hero-flower.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.banner-content{
+    width: 572px;
+    margin-bottom: 0px;
+    align-content: baseline;
+    padding-top: 100px;
+    /* background-color: rgb(142, 188, 142); */
+}
+.banner-title{
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.banner-description{
+    font-size: 1.3rem;
+    /* margin-top: 0px; */
+    margin-bottom: 0px;
+}
+/* banner responsive */
+@media screen and (max-width: 576px) {
+    .banner-content{
+        padding-top: 400px;
+        width: 100%;
+    }
+    .banner{
+        background-position: top;
+        margin-top: 0px;
+    }
+    header{
+        width: 100%;
+    }
+}
+
