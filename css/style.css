@@ -25,6 +25,16 @@
   font-style: normal;
 }
 
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
 
 /* shered styles */
 .flex{
@@ -42,10 +52,14 @@
 .color-3{
     color: #E95A08;
 }
+.color-4{
+    color: rgba(0, 0, 0, 0.5)
+}
 
 
 /* header related style */
-header{
+header, 
+.plants-container{
     max-width: 1140px;
     margin: 0px auto;
     /* background-color: green; */
@@ -132,3 +146,49 @@ navbar{
     }
 }
 
+
+/* plants container related style */
+.plants-container{
+    margin-top: 120px;
+    justify-content: space-around;
+}
+.plants{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.plant{
+    border: 2px solid black;
+    text-align: center;
+}
+.plant-title, 
+.plant-description{
+    text-align: center;
+    width: 880px;
+    margin: 0px auto;
+}
+.plant-title{
+    font-size: 3.12rem;
+    font-weight: 700;
+}
+.plant-description{
+    font-size: 1.37rem;
+}
+.plant img{
+    width: 100%;
+}
+.plant-name{
+    font-size: 1.38rem;
+}
+.plant-price{
+    font-size: 1.38rem;
+    font-weight: 700;
+}
+.btn-primary{
+    /* border: 1px solid green; */
+    width: 100%;
+    background-color: #E95A08;
+    margin-top: 10px;
+    padding: 12px 80px;
+    color: #ffffff;
+}
