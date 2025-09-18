@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&display=swap');
+
+.cossette-texte-regular {
+  font-family: "Cossette Texte", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cossette-texte-bold {
+  font-family: "Cossette Texte", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* shered styles */
+.flex{
+    display: flex;
+}
+.primary{
+    color: #000000;
+}
+.color{
+    color: #252432;
+}
+.color-2{
+    color: #8987A1;
+}
+/* header related style */
+header{
+    max-width: 1140px;
+    margin: 0px auto;
+    /* background-color: green; */
+}
+navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.menubar ul{
+    list-style: none;
+    align-items: center;
+}
+.menubar ul li a{
+    text-decoration: none;
+    margin-right: 50px;
+}
+#cart{
+    margin-right: 6px;
+}
