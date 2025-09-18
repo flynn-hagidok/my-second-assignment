@@ -80,6 +80,10 @@ navbar{
     .menubar ul li a{
         margin-right: 0px;
     }
+    .navbar{
+        padding: 0px 10px;
+        width: calc(100% - 20px);
+    }
 }
 
 
@@ -113,15 +117,18 @@ navbar{
 /* banner responsive */
 @media screen and (max-width: 576px) {
     .banner-content{
-        padding-top: 400px;
-        width: 100%;
+        padding: 400px 0px 10px 10px;
+        width: calc(100% - 20px);
     }
     .banner{
         background-position: top;
         margin-top: 0px;
     }
-    header{
+    /* header{
         width: 100%;
+    } */
+    .banner-title{
+        font-size: 1.5rem;
     }
 }
 
