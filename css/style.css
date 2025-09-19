@@ -61,7 +61,8 @@
 header, 
 .plants-container,
 .lover,
-.deals{
+.deals,
+.footer{
     max-width: 1140px;
     margin: 0px auto;
     /* background-color: green; */
@@ -353,7 +354,7 @@ navbar{
 
     .deal-img{
         grid-template-columns: repeat(1, 1fr);
-        padding-left: 60px;
+        padding-left: 65px;
     }  
     #background-1{
     grid-row: auto;
@@ -377,7 +378,7 @@ navbar{
 /* join related style */
 .join{
     margin-top: 100px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 533px;
     text-align: center;
     align-content: center;
@@ -411,6 +412,7 @@ input[type="button"]{
     justify-content: center;
 }
 
+
 /* join related responsive */
 @media screen and (max-width: 576px) {
     .join{
@@ -429,4 +431,54 @@ input[type="button"]{
     input[type="button"]{
         padding: 10px 20px;
     }
+}
+
+
+/* footer related style */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 110px;
+}
+.footer-icon img{
+    display: inline;
+    margin-left: 30px;
+}
+
+.footer-text{
+    width: 360px;
+    height: 180px;
+}
+.footer-text p{
+    margin-top: 10px;
+}
+.ul-list li a{
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+/* footer responsive */
+@media screen and (max-width: 576px) {
+   .footer,
+   .footer-menu{
+    flex-direction: column;
+    } 
+    .footer{
+        padding-left: 20px;
+    }
+    .footer-menu{
+        gap: 30px;
+    }
+    .footer-icon{
+        margin-top: 30px;
+        margin-left: -30px;
+    } 
 }
