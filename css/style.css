@@ -254,4 +254,17 @@ navbar{
     .badge{
         display: none;
     }
+    .lover-img{
+        width: 100%;
+    }
+    .lover-content{
+        width: 361px;
+    }
+    .lover-title{
+        width: 290px;
+        font-size: 1.5rem;
+    }
+    .lover-text{
+        font-size: 0.85rem;
+    }
 }
