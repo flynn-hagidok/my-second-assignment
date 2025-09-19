@@ -60,7 +60,8 @@
 /* header related style */
 header, 
 .plants-container,
-.lover{
+.lover,
+.deals{
     max-width: 1140px;
     margin: 0px auto;
     /* background-color: green; */
@@ -265,6 +266,108 @@ navbar{
         font-size: 1.5rem;
     }
     .lover-text{
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Latest Deals related style */
+.deals{
+    margin-top: 120px;
+}
+.latest-deal{
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.latest-deal h3{
+    font-size: 3.12rem;
+    font-weight: 700;
+}
+.deal-text{
+    width: 880px;
+    margin: 0px auto;
+    font-size: 1.38rem;
+}
+
+.deal-img{
+    /* border: 2px solid black; */
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.plant-img{
+    /* width: 360px; */
+    /* height: 197px; */
+    border-radius: 14px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.share{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.share-1{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.deal-off{
+    font-size: 3.12rem;
+    font-weight: 700;
+}
+.deal-shop{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#background{
+    background-image: url(../images/deal-bloom.png);
+    background-repeat: no-repeat;
+    height: 197px;
+    width: 360px;
+}
+#background-1{
+    background-image: url(../images/deal-zabo.png);
+    grid-row: span 2;
+    margin-left: -165px;
+}
+#background-2{
+    background-image: url(../images/deal-ana.png);
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    height: 197px;
+    width: 360px;
+}
+
+/* latest deals responsive */
+@media screen and (max-width: 576px) {
+    .latest-deal h3{
+        font-size: 1.5rem;
+    }
+    .deal-text{
+        width: 336px;
+    }
+
+    .deal-img{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 60px;
+    }  
+    #background-1{
+    grid-row: auto;
+    height: 197px;
+    width: 360px;
+    margin-left: 0px;
+    margin-top: 20px;
+    }
+    .deal-off{
+    font-size: 1.25rem;
+    font-weight: 700;
+    }
+    .deal-shop{
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: underline;
     }
 }
