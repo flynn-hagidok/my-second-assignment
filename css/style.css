@@ -193,6 +193,7 @@ navbar{
     margin-top: 10px;
     padding: 12px 80px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 
@@ -369,5 +370,63 @@ navbar{
     font-weight: 600;
     font-size: 1rem;
     text-decoration: underline;
+    }
+}
+
+
+/* join related style */
+.join{
+    margin-top: 100px;
+    border: 2px solid black;
+    height: 533px;
+    text-align: center;
+    align-content: center;
+    background-image: url(../images/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.join-title{
+    font-size: 3.12rem;
+    font-weight: 700;
+    color: white;
+}
+input[type="text"]{
+    width: 830px;
+    height: 50px;
+    padding-left: 20px;
+    /* box-shadow: 10px 10px 10px 10px white; */
+    background-color: white;
+}
+input[type="button"]{
+    background-color: #E95A08;
+    width: 150px;
+    height: 50px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+.input{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+}
+
+/* join related responsive */
+@media screen and (max-width: 576px) {
+    .join{
+    height: 276px;
+    width: 100%;
+    /* color: white; */
+    }
+    .join-title{
+        font-size: 1.25rem;
+    }
+    .input{
+        width: 370px;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    input[type="button"]{
+        padding: 10px 20px;
     }
 }
